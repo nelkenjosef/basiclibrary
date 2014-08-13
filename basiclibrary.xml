@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.2" method="upgrade">
+
+	<name>COM_BASICLIBRARY</name>
+	<creationDate>August 2014</creationDate>
+	<author>Nelkenjosef</author>
+	<authorEmail>basiclibrary@nelkenjosef.de</authorEmail>
+	<authorUrl>https://github.com/nelkenjosef</authorUrl>
+	<copyright>Copyright Info</copyright>
+	<license>License Info</license>
+	<version>1.0.0.</version>
+	<description>COM_BASICLIBRARY_DESCRIPTION</description>
+
+
+	<install> <!-- runs on install -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall> <!-- runs on uninstall -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+
+	<!-- site main file copy section -->
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>basiclibrary.php</filename>
+	</files>
+
+	<administration>
+		<!-- administration menu section -->
+		<menu>COM_BASICLIBRARY</menu>
+		<!-- admin main file copy section -->
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>basiclibrary.php</filename>
+			<folder>sql</folder>
+		</files>
+	</administration>
+
+</extension>
