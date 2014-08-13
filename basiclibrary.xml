@@ -11,6 +11,7 @@
 	<version>1.0.0.</version>
 	<description>COM_BASICLIBRARY_DESCRIPTION</description>
 
+	<scriptfile>install.php</scriptfile>
 
 	<install> <!-- runs on install -->
 		<sql>
@@ -31,11 +32,19 @@
 
 	<administration>
 		<!-- administration menu section -->
-		<menu>COM_BASICLIBRARY</menu>
+		<menu img="components/com_basiclibrary/assets/images/book.png">COM_BASICLIBRARY</menu>
+		<submenu>
+			<menu view="settings"
+				  img="components/com_basiclibrary/assets/images/book_edit.png"
+			>
+				COM_BASICLIBRARY_SETTINGS
+			</menu>
+		</submenu>
 		<!-- admin main file copy section -->
 		<files folder="admin">
 			<filename>index.html</filename>
 			<filename>basiclibrary.php</filename>
+			<folder>assets</folder>
 			<folder>sql</folder>
 		</files>
 	</administration>
