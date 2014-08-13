@@ -13,4 +13,4 @@ Basic Functions
 - requesting to borrow a book
 - waitlists for a book already lent
 
-*is written with the help of Lendr tutorial*
+*is written with the help of [Lendr](http://lendr.websparkinc.com/) tutorial*
