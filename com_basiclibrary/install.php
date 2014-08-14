@@ -3,9 +3,6 @@
 // no direct access to this file
 defined('_JEXEC') or die('Restricted access');
 
-jimport('joomla.installer.installer');
-jimport('joomla.installer.helper');
-
 class com_basiclibraryInstallerScript
 {
 	/**
@@ -15,7 +12,7 @@ class com_basiclibraryInstallerScript
 	 */
 	public function __construct(JAdapterInstance $adapter)
 	{
-		
+
 	}
 
 	/**
